@@ -1,0 +1,15 @@
+[alias]
+  unpushed = log --branches --not --remotes --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %cr %C(bold blue)<%an>%Creset' --abbrev-commit --date='format:%a %d.%m.%y %H:%M'
+  lgs = log --oneline --decorate
+  ca = commit -a
+  ci = commit
+  st = status -s -b -uall
+  co = checkout
+  br = branch
+  tagref = rev-list -n 1
+  me = merge --no-ff
+[diff]
+  tool = kdiff3
+[push]
+  default = simple
